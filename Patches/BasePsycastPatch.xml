@@ -53,7 +53,7 @@
 							<condition Class="XmlExtensions.Boolean.And">
 								<conditions>
 									<li Class="XmlExtensions.Boolean.Conditional">
-										<xpath>Defs/VFECore.Abilities.AbilityDef[@Name="VPE_PsycastBase"]</xpath>
+										<xpath>Defs/VEF.Abilities.AbilityDef[@Name="VPE_PsycastBase"]</xpath>
 									</li>
 									<li Class="XmlExtensions.Boolean.Comparison">
 										<value1>{affectPower}</value1>
@@ -71,7 +71,7 @@
 									</condition>
 									<caseTrue>
 										<Operation Class="XmlExtensions.PatchOperationSafeAdd">
-											<xpath>Defs/VFECore.Abilities.AbilityDef[@Name="VPE_PsycastBase"]</xpath>
+											<xpath>Defs/VEF.Abilities.AbilityDef[@Name="VPE_PsycastBase"]</xpath>
 											<value>
 												<powerStatOffsets>
 													<PsychicSensitivity>{powerFactor}</PsychicSensitivity>
@@ -82,7 +82,7 @@
 											<condition Class="XmlExtensions.Boolean.And">
 												<conditions>
 													<li Class="XmlExtensions.Boolean.Conditional">
-														<xpath>Defs/VFECore.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/powerStatOffsets</xpath>
+														<xpath>Defs/VEF.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/powerStatOffsets</xpath>
 													</li>
 													<li Class="XmlExtensions.Boolean.Comparison">
 														<value1>{overrideDefaultValues}</value1>
@@ -93,11 +93,11 @@
 											</condition>
 											<caseTrue>
 												<Operation Class="XmlExtensions.PatchOperationSafeRemove">
-													<xpath>Defs/VFECore.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/powerStatFactors</xpath>
+													<xpath>Defs/VEF.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/powerStatFactors</xpath>
 												</Operation>
 												<!--<Operation Class="XmlExtensions.Log"><text>powerB</text></Operation>-->
 												<Operation Class="XmlExtensions.PatchOperationSafeReplace">
-													<xpath>Defs/VFECore.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/powerStatOffsets</xpath>
+													<xpath>Defs/VEF.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/powerStatOffsets</xpath>
 													<value>
 														<PsychicSensitivity>{powerFactor}</PsychicSensitivity>
 													</value>
@@ -107,7 +107,7 @@
 									</caseTrue>
 									<caseFalse>
 										<Operation Class="XmlExtensions.PatchOperationSafeAdd">
-											<xpath>Defs/VFECore.Abilities.AbilityDef[@Name="VPE_PsycastBase"]</xpath>
+											<xpath>Defs/VEF.Abilities.AbilityDef[@Name="VPE_PsycastBase"]</xpath>
 											<value>
 												<powerStatFactors>
 													<PsychicSensitivity>{powerFactor}</PsychicSensitivity>
@@ -118,7 +118,7 @@
 											<condition Class="XmlExtensions.Boolean.And">
 												<conditions>
 													<li Class="XmlExtensions.Boolean.Conditional">
-														<xpath>Defs/VFECore.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/powerStatFactors</xpath>
+														<xpath>Defs/VEF.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/powerStatFactors</xpath>
 													</li>
 													<li Class="XmlExtensions.Boolean.Comparison">
 														<value1>{overrideDefaultValues}</value1>
@@ -130,7 +130,7 @@
 											<caseTrue>
 												<!--<Operation Class="XmlExtensions.Log"><text>powerB</text></Operation>-->
 												<Operation Class="XmlExtensions.PatchOperationSafeReplace">
-													<xpath>Defs/VFECore.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/powerStatFactors</xpath>
+													<xpath>Defs/VEF.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/powerStatFactors</xpath>
 													<value>
 														<PsychicSensitivity>{powerFactor}</PsychicSensitivity>
 													</value>
@@ -151,7 +151,7 @@
 							<condition Class="XmlExtensions.Boolean.And">
 								<conditions>
 									<li Class="XmlExtensions.Boolean.Conditional">
-										<xpath>Defs/VFECore.Abilities.AbilityDef[@Name="VPE_PsycastBase"]</xpath>
+										<xpath>Defs/VEF.Abilities.AbilityDef[@Name="VPE_PsycastBase"]</xpath>
 									</li>
 									<li Class="XmlExtensions.Boolean.Comparison">
 										<value1>{affectRange}</value1>
@@ -169,7 +169,7 @@
 									</condition>
 									<caseTrue>
 										<Operation Class="XmlExtensions.PatchOperationSafeAdd">
-											<xpath>Defs/VFECore.Abilities.AbilityDef[@Name="VPE_PsycastBase"]</xpath>
+											<xpath>Defs/VEF.Abilities.AbilityDef[@Name="VPE_PsycastBase"]</xpath>
 											<value>
 												<rangeStatOffsets>
 													<PsychicSensitivity>{rangeFactor}</PsychicSensitivity>
@@ -180,7 +180,7 @@
 											<condition Class="XmlExtensions.Boolean.And">
 												<conditions>
 													<li Class="XmlExtensions.Boolean.Conditional">
-														<xpath>Defs/VFECore.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/rangeStatOffsets</xpath>
+														<xpath>Defs/VEF.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/rangeStatOffsets</xpath>
 													</li>
 													<li Class="XmlExtensions.Boolean.Comparison">
 														<value1>{overrideDefaultValues}</value1>
@@ -191,11 +191,11 @@
 											</condition>
 											<caseTrue>
 												<Operation Class="XmlExtensions.PatchOperationSafeRemove">
-													<xpath>Defs/VFECore.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/rangeStatFactors</xpath>
+													<xpath>Defs/VEF.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/rangeStatFactors</xpath>
 												</Operation>
 												<!--<Operation Class="XmlExtensions.Log"><text>rangeB</text></Operation>-->
 												<Operation Class="XmlExtensions.PatchOperationSafeReplace">
-													<xpath>Defs/VFECore.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/rangeStatOffsets</xpath>
+													<xpath>Defs/VEF.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/rangeStatOffsets</xpath>
 													<value>
 														<PsychicSensitivity>{rangeFactor}</PsychicSensitivity>
 													</value>
@@ -205,7 +205,7 @@
 									</caseTrue>
 									<caseFalse>
 										<Operation Class="XmlExtensions.PatchOperationSafeAdd">
-											<xpath>Defs/VFECore.Abilities.AbilityDef[@Name="VPE_PsycastBase"]</xpath>
+											<xpath>Defs/VEF.Abilities.AbilityDef[@Name="VPE_PsycastBase"]</xpath>
 											<value>
 												<rangeStatFactors>
 													<PsychicSensitivity>{rangeFactor}</PsychicSensitivity>
@@ -216,7 +216,7 @@
 											<condition Class="XmlExtensions.Boolean.And">
 												<conditions>
 													<li Class="XmlExtensions.Boolean.Conditional">
-														<xpath>Defs/VFECore.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/rangeStatFactors</xpath>
+														<xpath>Defs/VEF.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/rangeStatFactors</xpath>
 													</li>
 													<li Class="XmlExtensions.Boolean.Comparison">
 														<value1>{overrideDefaultValues}</value1>
@@ -228,7 +228,7 @@
 											<caseTrue>
 												<!--<Operation Class="XmlExtensions.Log"><text>rangeB</text></Operation>-->
 												<Operation Class="XmlExtensions.PatchOperationSafeReplace">
-													<xpath>Defs/VFECore.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/rangeStatFactors</xpath>
+													<xpath>Defs/VEF.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/rangeStatFactors</xpath>
 													<value>
 														<PsychicSensitivity>{rangeFactor}</PsychicSensitivity>
 													</value>
@@ -250,7 +250,7 @@
 							<condition Class="XmlExtensions.Boolean.And">
 								<conditions>
 									<li Class="XmlExtensions.Boolean.Conditional">
-										<xpath>Defs/VFECore.Abilities.AbilityDef[@Name="VPE_PsycastBase"]</xpath>
+										<xpath>Defs/VEF.Abilities.AbilityDef[@Name="VPE_PsycastBase"]</xpath>
 									</li>
 									<li Class="XmlExtensions.Boolean.Comparison">
 										<value1>{affectRadius}</value1>
@@ -268,7 +268,7 @@
 									</condition>
 									<caseTrue>
 										<Operation Class="XmlExtensions.PatchOperationSafeAdd">
-											<xpath>Defs/VFECore.Abilities.AbilityDef[@Name="VPE_PsycastBase"]</xpath>
+											<xpath>Defs/VEF.Abilities.AbilityDef[@Name="VPE_PsycastBase"]</xpath>
 											<value>
 												<radiusStatOffsets>
 													<PsychicSensitivity>{radiusFactor}</PsychicSensitivity>
@@ -279,7 +279,7 @@
 											<condition Class="XmlExtensions.Boolean.And">
 												<conditions>
 													<li Class="XmlExtensions.Boolean.Conditional">
-														<xpath>Defs/VFECore.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/radiusStatOffsets</xpath>
+														<xpath>Defs/VEF.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/radiusStatOffsets</xpath>
 													</li>
 													<li Class="XmlExtensions.Boolean.Comparison">
 														<value1>{overrideDefaultValues}</value1>
@@ -290,11 +290,11 @@
 											</condition>
 											<caseTrue>
 												<Operation Class="XmlExtensions.PatchOperationSafeRemove">
-													<xpath>Defs/VFECore.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/radiusStatFactors</xpath>
+													<xpath>Defs/VEF.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/radiusStatFactors</xpath>
 												</Operation>
 												<!--<Operation Class="XmlExtensions.Log"><text>radiusB</text></Operation>-->
 												<Operation Class="XmlExtensions.PatchOperationSafeReplace">
-													<xpath>Defs/VFECore.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/radiusStatOffsets</xpath>
+													<xpath>Defs/VEF.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/radiusStatOffsets</xpath>
 													<value>
 														<PsychicSensitivity>{radiusFactor}</PsychicSensitivity>
 													</value>
@@ -304,7 +304,7 @@
 									</caseTrue>
 									<caseFalse>
 										<Operation Class="XmlExtensions.PatchOperationSafeAdd">
-											<xpath>Defs/VFECore.Abilities.AbilityDef[@Name="VPE_PsycastBase"]</xpath>
+											<xpath>Defs/VEF.Abilities.AbilityDef[@Name="VPE_PsycastBase"]</xpath>
 											<value>
 												<radiusStatFactors>
 													<PsychicSensitivity>{radiusFactor}</PsychicSensitivity>
@@ -315,7 +315,7 @@
 											<condition Class="XmlExtensions.Boolean.And">
 												<conditions>
 													<li Class="XmlExtensions.Boolean.Conditional">
-														<xpath>Defs/VFECore.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/radiusStatFactors</xpath>
+														<xpath>Defs/VEF.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/radiusStatFactors</xpath>
 													</li>
 													<li Class="XmlExtensions.Boolean.Comparison">
 														<value1>{overrideDefaultValues}</value1>
@@ -327,7 +327,7 @@
 											<caseTrue>
 												<!--<Operation Class="XmlExtensions.Log"><text>radiusB</text></Operation>-->
 												<Operation Class="XmlExtensions.PatchOperationSafeReplace">
-													<xpath>Defs/VFECore.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/radiusStatFactors</xpath>
+													<xpath>Defs/VEF.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/radiusStatFactors</xpath>
 													<value>
 														<PsychicSensitivity>{radiusFactor}</PsychicSensitivity>
 													</value>
@@ -349,7 +349,7 @@
 							<condition Class="XmlExtensions.Boolean.And">
 								<conditions>
 									<li Class="XmlExtensions.Boolean.Conditional">
-										<xpath>Defs/VFECore.Abilities.AbilityDef[@Name="VPE_PsycastBase"]</xpath>
+										<xpath>Defs/VEF.Abilities.AbilityDef[@Name="VPE_PsycastBase"]</xpath>
 									</li>
 									<li Class="XmlExtensions.Boolean.Comparison">
 										<value1>{affectCastTime}</value1>
@@ -374,7 +374,7 @@
 											</condition>
 											<caseTrue>
 												<Operation Class="XmlExtensions.PatchOperationSafeAdd">
-													<xpath>Defs/VFECore.Abilities.AbilityDef[@Name="VPE_PsycastBase"]</xpath>
+													<xpath>Defs/VEF.Abilities.AbilityDef[@Name="VPE_PsycastBase"]</xpath>
 													<value>
 														<castTimeStatOffsets>
 															<PsychicSensitivity>{inverseCastTimeFactor}</PsychicSensitivity>
@@ -385,7 +385,7 @@
 													<condition Class="XmlExtensions.Boolean.And">
 														<conditions>
 															<li Class="XmlExtensions.Boolean.Conditional">
-																<xpath>Defs/VFECore.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/castTimeStatOffsets</xpath>
+																<xpath>Defs/VEF.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/castTimeStatOffsets</xpath>
 															</li>
 															<li Class="XmlExtensions.Boolean.Comparison">
 																<value1>{overrideDefaultValues}</value1>
@@ -396,11 +396,11 @@
 													</condition>
 													<caseTrue>
 														<Operation Class="XmlExtensions.PatchOperationSafeRemove">
-															<xpath>Defs/VFECore.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/castTimeStatFactors</xpath>
+															<xpath>Defs/VEF.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/castTimeStatFactors</xpath>
 														</Operation>
 														<!--<Operation Class="XmlExtensions.Log"><text>castB</text></Operation>-->
 														<Operation Class="XmlExtensions.PatchOperationSafeReplace">
-															<xpath>Defs/VFECore.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/castTimeStatOffsets</xpath>
+															<xpath>Defs/VEF.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/castTimeStatOffsets</xpath>
 															<value>
 																<PsychicSensitivity>{inverseCastTimeFactor}</PsychicSensitivity>
 															</value>
@@ -410,7 +410,7 @@
 											</caseTrue>
 											<caseFalse>
 												<Operation Class="XmlExtensions.PatchOperationSafeAdd">
-													<xpath>Defs/VFECore.Abilities.AbilityDef[@Name="VPE_PsycastBase"]</xpath>
+													<xpath>Defs/VEF.Abilities.AbilityDef[@Name="VPE_PsycastBase"]</xpath>
 													<value>
 														<castTimeStatFactors>
 															<PsychicSensitivity>{inverseCastTimeFactor}</PsychicSensitivity>
@@ -421,7 +421,7 @@
 													<condition Class="XmlExtensions.Boolean.And">
 														<conditions>
 															<li Class="XmlExtensions.Boolean.Conditional">
-																<xpath>Defs/VFECore.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/castTimeStatFactors</xpath>
+																<xpath>Defs/VEF.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/castTimeStatFactors</xpath>
 															</li>
 															<li Class="XmlExtensions.Boolean.Comparison">
 																<value1>{overrideDefaultValues}</value1>
@@ -433,7 +433,7 @@
 													<caseTrue>
 														<!--<Operation Class="XmlExtensions.Log"><text>castB</text></Operation>-->
 														<Operation Class="XmlExtensions.PatchOperationSafeReplace">
-															<xpath>Defs/VFECore.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/castTimeStatFactors</xpath>
+															<xpath>Defs/VEF.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/castTimeStatFactors</xpath>
 															<value>
 																<PsychicSensitivity>{inverseCastTimeFactor}</PsychicSensitivity>
 															</value>
@@ -455,7 +455,7 @@
 							<condition Class="XmlExtensions.Boolean.And">
 								<conditions>
 									<li Class="XmlExtensions.Boolean.Conditional">
-										<xpath>Defs/VFECore.Abilities.AbilityDef[@Name="VPE_PsycastBase"]</xpath>
+										<xpath>Defs/VEF.Abilities.AbilityDef[@Name="VPE_PsycastBase"]</xpath>
 									</li>
 									<li Class="XmlExtensions.Boolean.Comparison">
 										<value1>{affectCooldown}</value1>
@@ -480,7 +480,7 @@
 											</condition>
 											<caseTrue>
 												<Operation Class="XmlExtensions.PatchOperationSafeAdd">
-													<xpath>Defs/VFECore.Abilities.AbilityDef[@Name="VPE_PsycastBase"]</xpath>
+													<xpath>Defs/VEF.Abilities.AbilityDef[@Name="VPE_PsycastBase"]</xpath>
 													<value>
 														<cooldownTimeStatOffsets>
 															<PsychicSensitivity>{inverseCooldownFactor}</PsychicSensitivity>
@@ -491,7 +491,7 @@
 													<condition Class="XmlExtensions.Boolean.And">
 														<conditions>
 															<li Class="XmlExtensions.Boolean.Conditional">
-																<xpath>Defs/VFECore.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/cooldownTimeStatOffsets</xpath>
+																<xpath>Defs/VEF.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/cooldownTimeStatOffsets</xpath>
 															</li>
 															<li Class="XmlExtensions.Boolean.Comparison">
 																<value1>{overrideDefaultValues}</value1>
@@ -502,11 +502,11 @@
 													</condition>
 													<caseTrue>
 														<Operation Class="XmlExtensions.PatchOperationSafeRemove">
-															<xpath>Defs/VFECore.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/cooldownTimeStatFactors</xpath>
+															<xpath>Defs/VEF.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/cooldownTimeStatFactors</xpath>
 														</Operation>
 														<!--<Operation Class="XmlExtensions.Log"><text>coolB</text></Operation>-->
 														<Operation Class="XmlExtensions.PatchOperationSafeReplace">
-															<xpath>Defs/VFECore.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/cooldownTimeStatOffsets</xpath>
+															<xpath>Defs/VEF.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/cooldownTimeStatOffsets</xpath>
 															<value>
 																<PsychicSensitivity>{inverseCooldownFactor}</PsychicSensitivity>
 															</value>
@@ -516,7 +516,7 @@
 											</caseTrue>
 											<caseFalse>
 												<Operation Class="XmlExtensions.PatchOperationSafeAdd">
-													<xpath>Defs/VFECore.Abilities.AbilityDef[@Name="VPE_PsycastBase"]</xpath>
+													<xpath>Defs/VEF.Abilities.AbilityDef[@Name="VPE_PsycastBase"]</xpath>
 													<value>
 														<cooldownTimeStatFactors>
 															<PsychicSensitivity>{inverseCooldownFactor}</PsychicSensitivity>
@@ -527,7 +527,7 @@
 													<condition Class="XmlExtensions.Boolean.And">
 														<conditions>
 															<li Class="XmlExtensions.Boolean.Conditional">
-																<xpath>Defs/VFECore.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/cooldownTimeStatFactors</xpath>
+																<xpath>Defs/VEF.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/cooldownTimeStatFactors</xpath>
 															</li>
 															<li Class="XmlExtensions.Boolean.Comparison">
 																<value1>{overrideDefaultValues}</value1>
@@ -539,7 +539,7 @@
 													<caseTrue>
 														<!--<Operation Class="XmlExtensions.Log"><text>coolB</text></Operation>-->
 														<Operation Class="XmlExtensions.PatchOperationSafeReplace">
-															<xpath>Defs/VFECore.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/cooldownTimeStatFactors</xpath>
+															<xpath>Defs/VEF.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/cooldownTimeStatFactors</xpath>
 															<value>
 																<PsychicSensitivity>{inverseCooldownFactor}</PsychicSensitivity>
 															</value>
@@ -560,7 +560,7 @@
 							<condition Class="XmlExtensions.Boolean.And">
 								<conditions>
 									<li Class="XmlExtensions.Boolean.Conditional">
-										<xpath>Defs/VFECore.Abilities.AbilityDef[@Name="VPE_PsycastBase"]</xpath>
+										<xpath>Defs/VEF.Abilities.AbilityDef[@Name="VPE_PsycastBase"]</xpath>
 									</li>
 									<li Class="XmlExtensions.Boolean.Comparison">
 										<value1>{affectDuration}</value1>
@@ -579,7 +579,7 @@
 									</condition>
 									<caseTrue>
 										<Operation Class="XmlExtensions.PatchOperationSafeAdd">
-											<xpath>Defs/VFECore.Abilities.AbilityDef[@Name="VPE_PsycastBase"]</xpath>
+											<xpath>Defs/VEF.Abilities.AbilityDef[@Name="VPE_PsycastBase"]</xpath>
 											<value>
 												<durationTimeStatOffsets>
 													<PsychicSensitivity>{durationFactor}</PsychicSensitivity>
@@ -590,7 +590,7 @@
 											<condition Class="XmlExtensions.Boolean.And">
 												<conditions>
 													<li Class="XmlExtensions.Boolean.Conditional">
-														<xpath>Defs/VFECore.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/durationTimeStatOffsets</xpath>
+														<xpath>Defs/VEF.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/durationTimeStatOffsets</xpath>
 													</li>
 													<li Class="XmlExtensions.Boolean.Comparison">
 														<value1>{overrideDefaultValues}</value1>
@@ -601,11 +601,11 @@
 											</condition>
 											<caseTrue>
 												<Operation Class="XmlExtensions.PatchOperationSafeRemove">
-													<xpath>Defs/VFECore.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/durationTimeStatFactors</xpath>
+													<xpath>Defs/VEF.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/durationTimeStatFactors</xpath>
 												</Operation>
 												<!--<Operation Class="XmlExtensions.Log"><text>coolB</text></Operation>-->
 												<Operation Class="XmlExtensions.PatchOperationSafeReplace">
-													<xpath>Defs/VFECore.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/durationTimeStatOffsets</xpath>
+													<xpath>Defs/VEF.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/durationTimeStatOffsets</xpath>
 													<value>
 														<PsychicSensitivity>{durationFactor}</PsychicSensitivity>
 													</value>
@@ -615,7 +615,7 @@
 									</caseTrue>
 									<caseFalse>
 										<Operation Class="XmlExtensions.PatchOperationSafeAdd">
-											<xpath>Defs/VFECore.Abilities.AbilityDef[@Name="VPE_PsycastBase"]</xpath>
+											<xpath>Defs/VEF.Abilities.AbilityDef[@Name="VPE_PsycastBase"]</xpath>
 											<value>
 												<durationTimeStatFactors>
 													<PsychicSensitivity>{durationFactor}</PsychicSensitivity>
@@ -626,7 +626,7 @@
 											<condition Class="XmlExtensions.Boolean.And">
 												<conditions>
 													<li Class="XmlExtensions.Boolean.Conditional">
-														<xpath>Defs/VFECore.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/durationTimeStatFactors</xpath>
+														<xpath>Defs/VEF.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/durationTimeStatFactors</xpath>
 													</li>
 													<li Class="XmlExtensions.Boolean.Comparison">
 														<value1>{overrideDefaultValues}</value1>
@@ -638,7 +638,7 @@
 											<caseTrue>
 												<!--<Operation Class="XmlExtensions.Log"><text>coolB</text></Operation>-->
 												<Operation Class="XmlExtensions.PatchOperationSafeReplace">
-													<xpath>Defs/VFECore.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/durationTimeStatFactors</xpath>
+													<xpath>Defs/VEF.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/durationTimeStatFactors</xpath>
 													<value>
 														<PsychicSensitivity>{durationFactor}</PsychicSensitivity>
 													</value>
@@ -658,7 +658,7 @@
 							<condition Class="XmlExtensions.Boolean.And">
 								<conditions>
 									<li Class="XmlExtensions.Boolean.Conditional">
-										<xpath>Defs/VFECore.Abilities.AbilityDef/modExtensions/li[@Class="VanillaPsycastsExpanded.AbilityExtension_Psycast"]</xpath>
+										<xpath>Defs/VEF.Abilities.AbilityDef/modExtensions/li[@Class="VanillaPsycastsExpanded.AbilityExtension_Psycast"]</xpath>
 									</li>
 									<li Class="XmlExtensions.Boolean.Comparison">
 										<value1>{affectEntropyGain}</value1>
@@ -670,7 +670,7 @@
 							<caseTrue>
 								<!--<Operation Class="XmlExtensions.Log"><text>heatA</text></Operation>-->
 								<Operation Class="XmlExtensions.PatchOperationSafeAdd">
-									<xpath>Defs/VFECore.Abilities.AbilityDef/modExtensions/li[@Class="VanillaPsycastsExpanded.AbilityExtension_Psycast"]</xpath>
+									<xpath>Defs/VEF.Abilities.AbilityDef/modExtensions/li[@Class="VanillaPsycastsExpanded.AbilityExtension_Psycast"]</xpath>
 									<value>
 										<entropyGainStatFactors>
 											<PsychicSensitivity>{entropyGainFactor}</PsychicSensitivity>
@@ -681,7 +681,7 @@
 									<condition Class="XmlExtensions.Boolean.And">
 										<conditions>
 											<li Class="XmlExtensions.Boolean.Conditional">
-												<xpath>Defs/VFECore.Abilities.AbilityDef/modExtensions/li[@Class="VanillaPsycastsExpanded.AbilityExtension_Psycast"]</xpath>
+												<xpath>Defs/VEF.Abilities.AbilityDef/modExtensions/li[@Class="VanillaPsycastsExpanded.AbilityExtension_Psycast"]</xpath>
 											</li>
 											<li Class="XmlExtensions.Boolean.Comparison">
 												<value1>{overrideDefaultValues}</value1>
@@ -690,10 +690,10 @@
 											</li>
 										</conditions>
 									</condition>
-									<caseTrue> <!--Defs/VFECore.Abilities.AbilityDef/modExtensions/li[@Class="VanillaPsycastsExpanded.AbilityExtension_Psycast"]-->
+									<caseTrue> <!--Defs/VEF.Abilities.AbilityDef/modExtensions/li[@Class="VanillaPsycastsExpanded.AbilityExtension_Psycast"]-->
 										<!--<Operation Class="XmlExtensions.Log"><text>heatB</text></Operation>-->
 										<Operation Class="XmlExtensions.PatchOperationSafeReplace">
-											<xpath>Defs/VFECore.Abilities.AbilityDef/modExtensions/li[@Class="VanillaPsycastsExpanded.AbilityExtension_Psycast"]</xpath>
+											<xpath>Defs/VEF.Abilities.AbilityDef/modExtensions/li[@Class="VanillaPsycastsExpanded.AbilityExtension_Psycast"]</xpath>
 											<value>
 												<PsychicSensitivity>{entropyGainFactor}</PsychicSensitivity>
 											</value>
