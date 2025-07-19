@@ -260,12 +260,21 @@
 								</conditions>
 							</condition>
 							<caseTrue>
+
+								<Operation Class="XmlExtensions.PatchOperationSafeRemove">
+									<xpath>Defs/VEF.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/radiusStatFactors</xpath>
+								</Operation>
+								<Operation Class="XmlExtensions.PatchOperationSafeRemove">
+									<xpath>Defs/VEF.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/radiusStatOffsets</xpath>
+								</Operation>
+
 								<Operation Class="XmlExtensions.IfStatement">
 									<condition Class="XmlExtensions.Boolean.Comparison">
 										<value1>{offsetMode}</value1>
 										<value2>True</value2>
 										<nonNumeric>true</nonNumeric>
 									</condition>
+
 									<caseTrue>
 										<Operation Class="XmlExtensions.PatchOperationSafeAdd">
 											<xpath>Defs/VEF.Abilities.AbilityDef[@Name="VPE_PsycastBase"]</xpath>
@@ -289,10 +298,6 @@
 												</conditions>
 											</condition>
 											<caseTrue>
-												<Operation Class="XmlExtensions.PatchOperationSafeRemove">
-													<xpath>Defs/VEF.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/radiusStatFactors</xpath>
-												</Operation>
-												<!--<Operation Class="XmlExtensions.Log"><text>radiusB</text></Operation>-->
 												<Operation Class="XmlExtensions.PatchOperationSafeReplace">
 													<xpath>Defs/VEF.Abilities.AbilityDef[@ParentName="VPE_PsycastBase"]/radiusStatOffsets</xpath>
 													<value>
@@ -302,6 +307,8 @@
 											</caseTrue>
 										</Operation>	
 									</caseTrue>
+
+
 									<caseFalse>
 										<Operation Class="XmlExtensions.PatchOperationSafeAdd">
 											<xpath>Defs/VEF.Abilities.AbilityDef[@Name="VPE_PsycastBase"]</xpath>
