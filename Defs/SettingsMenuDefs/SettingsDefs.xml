@@ -94,6 +94,7 @@
                         <label>Factor: </label>
                         <tKey>mute_vpesensitivity_power_label</tKey>
                         <defaultValue>0.75</defaultValue>
+                        <decimals>2</decimals>
                         <min>0.01</min>
                         <max>10000</max>
                     </li>
@@ -102,6 +103,7 @@
                         <label>Factor: </label>
                         <tKey>mute_vpesensitivity_range_label</tKey>
                         <defaultValue>0.75</defaultValue>
+                        <decimals>2</decimals>
                         <min>0.01</min>
                         <max>10000</max>
                     </li>
@@ -110,6 +112,7 @@
                         <label>Factor: </label>
                         <tKey>mute_vpesensitivity_radius_label</tKey>
                         <defaultValue>0.75</defaultValue>
+                        <decimals>2</decimals>
                         <min>0.01</min>
                         <max>10000</max>
                     </li>
@@ -118,6 +121,7 @@
                         <label>Factor: </label>
                         <tKey>mute_vpesensitivity_casttime_label</tKey>
                         <defaultValue>0.75</defaultValue>
+                        <decimals>2</decimals>
                         <min>0.01</min>
                         <max>10000</max>
                     </li>
@@ -126,6 +130,7 @@
                         <label>Factor: </label>
                         <tKey>mute_vpesensitivity_cooldown_label</tKey>
                         <defaultValue>0.75</defaultValue>
+                        <decimals>2</decimals>
                         <min>0.01</min>
                         <max>10000</max>
                     </li>
@@ -134,6 +139,7 @@
                         <label>Factor: </label>
                         <tKey>mute_vpesensitivity_duration_label</tKey>
                         <defaultValue>0.75</defaultValue>
+                        <decimals>2</decimals>
                         <min>0.01</min>
                         <max>10000</max>
                     </li>
@@ -142,6 +148,7 @@
                         <label>Factor: </label>
                         <tKey>mute_vpesensitivity_entropygain_label</tKey>
                         <defaultValue>2</defaultValue>
+                        <decimals>2</decimals>
                         <min>0.01</min>
                         <max>10000</max>
                     </li>
